@@ -1,18 +1,22 @@
 <?php
 
-$notes = array(); /*declare un tableau de 9 notes*/
+$notes = [];
+
+
+$somme = 0; //initialisation note
+
 
 for ($i = 1; $i <= 9; $i++) {
-    echo "Entrez la note $i : ";
-    $note = floatval(readline()); // Utilisation de la fonction readline() pour lire l'entrée utilisateur
-    $notes[] = $note;
+    echo "Saisir la note $i : ";
+    $note = readline();
+    
+    $notes[] = $note; //ajout note au tableau
+
+    $somme += $note;
 }
 
-// Calcul de la moyenne des notes
-$somme = array_sum($notes);
-$moyenne = $somme / count($notes);
 
-// Affichage de la moyenne
-echo "La moyenne des notes est : $moyenne\n";
+$moyenne = $somme / 9;
 
+echo "La moyenne des notes est : $moyenne";
 ?>
