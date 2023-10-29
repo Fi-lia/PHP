@@ -2,17 +2,16 @@
 
 $prix = [5,50,23,11];
 $quantites = [10,1,4,3];
-$totals = [];
+
+$total = 0;
+
 
 for($i=0; $i<4;$i++ ){
-$total = $prix[$i] * $quantites[$i];
-$totals[]= $total;
+$total += $prix[$i] * $quantites[$i];
 }
 
-echo "le nouveau tableau";
-foreach ($totals as $value){
-    echo $value . " ";
-}
+echo "le prix total est : $total";
 
-$somme = array_sum($totals);
-echo $somme;
+// $somme = array_sum($totals);
+// echo $somme;
+
