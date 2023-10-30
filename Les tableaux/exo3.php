@@ -1,7 +1,6 @@
 <?php
 
-$tableau = array(10, 20, 30, 40, 50);
-
+$tableau = [10, 20, 30, 40, 50];
 
 $somme = 0;
 
