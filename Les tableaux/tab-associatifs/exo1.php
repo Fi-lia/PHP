@@ -3,7 +3,7 @@
 $chomage = array("Autriche" =>4.9, "Allemagne" =>9.3 ,"Danemark" =>4.8 ,"Espagne" =>9.4 ,"France" =>9.7);
 
 $payschomagemin = "";
-$tauxchomagemin = min($chomage);
+$tauxchomagemin = 100;
 
 foreach($chomage as $pays => $taux){
     echo "Le pays est " . $pays . " : " . $taux . "% de chomage \n";
@@ -23,6 +23,7 @@ foreach ($chomage as $pays => $taux) {
     if ($taux < $tauxchomagemin) {
         $tauxchomagemin = $taux;
         $payschomagemin = $pays; 
+
     }  
 }
-echo "Le pays avec le taux de chômage le plus bas est $pays avec un taux de $tauxchomagemin%";
+echo "Le pays avec le taux de chômage le plus bas est " . $payschomagemin . " avec un taux de " . $tauxchomagemin . "%";
