@@ -3,6 +3,6 @@
 
 <?php
 $content = ob_get_clean();
-$titre = "Ma page d'accueil";
+$titre = "Helloooooooo";
 require "template.php";
 ?>

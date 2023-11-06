@@ -2,51 +2,29 @@
 
 
 <form action="#" method="get">
-    Combien de notes : <input type="number"> <br>
+    Combien de notes : <input type="number" name="table" id="table"> <br>
     <input type="submit" value="Valider">
 </form>
 
 
 <div class="multi">
 
-<!--boucle for en integrant le fieldset dedans-->
-<fieldset>
-    <legend> Moyenne : </legend>
-    Note1 : <input type="number"><br>
-    Note2 : <input type="number"><br>
-    Note3 : <input type="number"><br>
-    Note4 : <input type="number"><br>
-    Note5 : <input type="number"><br>
-    <input type="submit" value="Calculer">
-</fieldset>
 <?php
+    $nombre_de_fieldsets = $_GET["table"];
+ 
+    if(isset($_GET["table"])){
+    echo "<fieldset>";
+    echo "<legend>Moyenne : </legend>";
+        for ($i = 1; $i <= $nombre_de_fieldsets; $i++) {
+            echo "<p>Note$i: <input type='number' name='note' id='note'></p>";
+                
+    }   
+    echo "<input type='submit' value='Valider'>";
+    echo "</fieldset>";
+    }
 
-if(isset($_GET["table"])){
-    echo "";
-}
-
-
-// $totalnotes = array_sum($tabNotes) calcul somme des valeurs; 
-// $nombreEleves = count($tabNotes);
-
-// $moyenne = $totalnotes / $nombreEleves;
-// echo "La moyenne des notes est : $moyenne";
-
-
-
-
-
-
-
-
-
-?>
-
+    ?>
 </div>
-
-
-
-
 
 <?php
 $content = ob_get_clean();
