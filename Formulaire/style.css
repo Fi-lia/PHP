@@ -33,10 +33,13 @@ ul{
     justify-content: center;
 }
 
-div{
-    background-color: white;
+
+
+.fond{
+    background-color: #F2F2F2;
     margin: 60px;
-}
+    height: 100vh;
+} 
 
 h1{
     padding-top: 2%;
@@ -44,15 +47,52 @@ h1{
     margin-left: 30px;
     font-family: 'Fira Sans', sans-serif;
     color: #793862;
-    
+    font-size: 1.3rem;
+    border-bottom: 1px dotted #793862;
+    padding-bottom: 20px;
 }
+
 form{
     margin-top: 50px;
     margin-left: 30px;
-    font-family: 'Fira Sans', sans-serif;
+    /* font-family: 'Fira Sans', sans-serif; */
     font-size: 1rem;
-   
+    padding:10px;
+    width:420px;
+    background-color: #F2F2F2;
+    border: 1px solid #333333;
+    /* text-align: center; */
+    /* height: 100vh; */
 }
+
+
+fieldset {
+    padding:0 20px 20px 20px;
+    margin-bottom:10px;
+    border:1px solid #7A86B8;
+}
+
+label {
+    margin-top:10px;
+    display: inline-block;
+    /* display:block; aller à la ligne */
+    }
+
+select, option{
+    
+    padding:3px;
+    border-radius:5px;
+    width:200px;
+}
+
+/* boutton */
+input[type=submit], input[type=reset] {
+    width:100px;
+    /* margin-left:5px; */
+    box-shadow:2px 2px 2px #793862;
+    cursor:pointer;
+    height: 40px;
+    }
 
 label {
     font-family: 'Fira Sans', sans-serif;
@@ -66,16 +106,26 @@ label {
   }
   
 .multi{
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 30px;
     color: #333333;
-    padding-bottom: 2%;
+    /* padding-bottom: 2%; */
+    text-align: center;
+    
 }
 
 /* exo conversion monnaie */
 .resultat{
     display: flex;
 }
-p{
-    border: 1px solid black;
+
+/* formulaire recherche demploi*/
+
+.coordonnee{
+    display: flex;
+    /* display: block; */
+    /* width: 800px; */
+}
+.langue{
+    display: flex;
 }

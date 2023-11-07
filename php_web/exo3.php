@@ -17,6 +17,7 @@
 <div class="multi">
 <?php
 
+
 echo "<h2> Résultats </h2>" ."<br/>";
 
 if(isset($_POST["table"]) && isset($_POST["cocher"])){

@@ -23,7 +23,7 @@
         </nav>
     </header>
 
-    <div>
+    <div class="fond">
     <h1><?= $titre ?></h1>
     <?= $content ?>
     </div>

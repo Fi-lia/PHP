@@ -34,7 +34,7 @@ ul{
 }
 
 div{
-    background-color: white;
+    background-color: #F2F2F2;
     margin: 60px;
 }
 
@@ -44,8 +44,12 @@ h1{
     margin-left: 30px;
     font-family: 'Fira Sans', sans-serif;
     color: #793862;
+    font-size: 1.3rem;
+    border-bottom: 1px dotted #793862;
+    padding-bottom: 20px;
     
 }
+
 form{
     margin-top: 50px;
     margin-left: 30px;

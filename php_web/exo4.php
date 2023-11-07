@@ -1,4 +1,4 @@
-<?php ob_start()?>
+<?php ob_start();session_start()?>
 
 
 <form action="#" method="post">
@@ -10,6 +10,9 @@ Quel est le chiffre : <input type="number" name="table" id="table"> <br>
 
 <div class="multi">
 <?php
+
+
+//$session pour garder le chiffre alea (page de connexion)
 
 if(isset($_POST["table"]))
 {
@@ -23,6 +26,7 @@ if(isset($_POST["table"]))
     }elseif($supposition < $nombre_ordinateur){
         echo "<h2> Le chiffre est plus petit </h2>";
     }
+    echo $nombre_ordinateur;
 }
 
 
