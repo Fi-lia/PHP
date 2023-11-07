@@ -10,14 +10,15 @@
 <div class="multi">
 
 <?php
-    $nombre_de_fieldsets = $_GET["table"];
+    
  
     if(isset($_GET["table"])){
+        $nombre_de_notes =$_GET["table"];
     echo "<fieldset>";
     echo "<legend>Moyenne : </legend>";
-        for ($i = 1; $i <= $nombre_de_fieldsets; $i++) {
+        for ($i = 1; $i <= $nombre_de_notes; $i++) {
             echo "<p>Note$i: <input type='number' name='note' id='note'></p>";
-                
+            
     }   
     echo "<input type='submit' value='Valider'>";
     echo "</fieldset>";
